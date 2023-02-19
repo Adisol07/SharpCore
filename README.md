@@ -1,1 +1,2 @@
 # SharpCore
+Make C# better

@@ -6,6 +6,10 @@ using System.Threading.Tasks;
 
 namespace SharpCore.Mathematics
 {
+	/// <summary>
+	/// Base class for defining X, Y and Z values (3D)
+	/// </summary>
+	[Serializable]
 	public class Vector3
 	{
 		public float X { get; set; } = 0;

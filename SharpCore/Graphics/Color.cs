@@ -6,6 +6,10 @@ using System.Threading.Tasks;
 
 namespace SharpCore.Graphics
 {
+	/// <summary>
+	/// Class for making aRGB color
+	/// </summary>
+	[Serializable]
 	public class Color
 	{
 		public byte A { get; set; } = 0;

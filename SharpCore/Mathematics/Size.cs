@@ -6,6 +6,10 @@ using System.Threading.Tasks;
 
 namespace SharpCore.Mathematics
 {
+	/// <summary>
+	/// Class for defining Width and Height size (2D)
+	/// </summary>
+	[Serializable]
 	public class Size : Vector2
 	{
 		public int Width => (int)X;
@@ -13,5 +17,10 @@ namespace SharpCore.Mathematics
 
 		public Size(int width, int height) : base(width, height)
 		{ }
+
+		public override string ToString()
+		{
+			return "(Width:" + Width + " Height:" + Height + ")";
+		}
 	}
 }

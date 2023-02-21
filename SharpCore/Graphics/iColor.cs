@@ -6,6 +6,10 @@ using System.Threading.Tasks;
 
 namespace SharpCore.Graphics
 {
+	/// <summary>
+	/// Class for making aRGB unlimited color
+	/// </summary>
+	[Serializable]
 	public class iColor
 	{
 		public int A { get; set; } = 0;

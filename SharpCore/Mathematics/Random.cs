@@ -6,9 +6,13 @@ using System.Threading.Tasks;
 
 namespace SharpCore.Mathematics
 {
+	/// <summary>
+	/// Class for generating random numbers
+	/// </summary>
 	public class Random
 	{
 		public int Seed { get; }
+		public List<object> Values { get; } = new List<object>();
 
 		public Random(int seed = 0) 
 		{
@@ -18,12 +22,16 @@ namespace SharpCore.Mathematics
 		public int Range(int min, int max)
 		{
 			System.Random r = new System.Random(Seed);
-			return r.Next(min, max + 1);
+			int num = r.Next(min, max + 1);
+			Values.Add(num);
+			return num;
 		}
 		public float Range()
 		{
 			System.Random r = new System.Random(Seed);
-			return r.Next(0, 100 + 1) / 100;
+			float num = r.Next(0, 100 + 1) / 100;
+			Values.Add(num);
+			return num;
 		}
 		public static int Range(int min, int max, int seed = 0)
 		{

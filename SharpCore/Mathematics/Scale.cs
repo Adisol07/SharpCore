@@ -6,6 +6,10 @@ using System.Threading.Tasks;
 
 namespace SharpCore.Mathematics
 {
+	/// <summary>
+	/// Class for defining Width, Height and Depth scale (3D)
+	/// </summary>
+	[Serializable]
 	public class Scale : Vector3
 	{
 		public float Width => (int)X;
@@ -16,5 +20,10 @@ namespace SharpCore.Mathematics
 		{ }
 		public Scale(int width, int height, int depth) : base(width, height, depth)
 		{ }
+
+		public override string ToString()
+		{
+			return "(Width:" + Width + " Height:" + Height + " Depth:" + Depth + ")";
+		}
 	}
 }

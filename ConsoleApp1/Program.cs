@@ -10,7 +10,7 @@ namespace ConsoleApp1
 			User user = new User();
 			user.Name = "User1";
 			user.Password = "Us@r1";
-			user.Position = new Position(69,420,0);
+			user.Position = new Position(0,10,20);
 			user.Serialize("./user.bin", SerializeTypes.Binary);
 
 			User desUser = new User();
